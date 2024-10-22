@@ -6,14 +6,92 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0361CEC82CC62F7D00434DC0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361CEC72CC62F7D00434DC0 /* WidgetKit.framework */; };
+		0361CECA2CC62F7D00434DC0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361CEC92CC62F7D00434DC0 /* SwiftUI.framework */; };
+		0361CED52CC62F7F00434DC0 /* FlightActivityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0361CEC52CC62F7D00434DC0 /* FlightActivityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0361CED32CC62F7F00434DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0361CE9B2CC62E4900434DC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0361CEC42CC62F7D00434DC0;
+			remoteInfo = FlightActivityWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0361CEDA2CC62F7F00434DC0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0361CED52CC62F7F00434DC0 /* FlightActivityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0361CEA32CC62E4900434DC0 /* RXHackthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXHackthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0361CEC52CC62F7D00434DC0 /* FlightActivityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlightActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0361CEC72CC62F7D00434DC0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0361CEC92CC62F7D00434DC0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		035205EA2CC75A5600F8FB46 /* Exceptions for "RXHackthon" folder in "RXHackthon" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0361CEA22CC62E4900434DC0 /* RXHackthon */;
+		};
+		0361CED62CC62F7F00434DC0 /* Exceptions for "FlightActivityWidget" folder in "FlightActivityWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0361CEC42CC62F7D00434DC0 /* FlightActivityWidgetExtension */;
+		};
+		0361CEF52CC6353700434DC0 /* Exceptions for "RXHackthon" folder in "FlightActivityWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Constants.swift,
+				FlightAttribute.swift,
+			);
+			target = 0361CEC42CC62F7D00434DC0 /* FlightActivityWidgetExtension */;
+		};
+		0361CEFC2CC68F7300434DC0 /* Exceptions for "FlightActivityWidget" folder in "RXHackthon" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FlightActivityView.swift,
+			);
+			target = 0361CEA22CC62E4900434DC0 /* RXHackthon */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0361CEA52CC62E4900434DC0 /* RXHackthon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				035205EA2CC75A5600F8FB46 /* Exceptions for "RXHackthon" folder in "RXHackthon" target */,
+				0361CEF52CC6353700434DC0 /* Exceptions for "RXHackthon" folder in "FlightActivityWidgetExtension" target */,
+			);
 			path = RXHackthon;
+			sourceTree = "<group>";
+		};
+		0361CECB2CC62F7D00434DC0 /* FlightActivityWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0361CEFC2CC68F7300434DC0 /* Exceptions for "FlightActivityWidget" folder in "RXHackthon" target */,
+				0361CED62CC62F7F00434DC0 /* Exceptions for "FlightActivityWidget" folder in "FlightActivityWidgetExtension" target */,
+			);
+			path = FlightActivityWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +104,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0361CEC22CC62F7D00434DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0361CECA2CC62F7D00434DC0 /* SwiftUI.framework in Frameworks */,
+				0361CEC82CC62F7D00434DC0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				0361CEA52CC62E4900434DC0 /* RXHackthon */,
+				0361CECB2CC62F7D00434DC0 /* FlightActivityWidget */,
+				0361CEC62CC62F7D00434DC0 /* Frameworks */,
 				0361CEA42CC62E4900434DC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +130,18 @@
 			isa = PBXGroup;
 			children = (
 				0361CEA32CC62E4900434DC0 /* RXHackthon.app */,
+				0361CEC52CC62F7D00434DC0 /* FlightActivityWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0361CEC62CC62F7D00434DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0361CEC72CC62F7D00434DC0 /* WidgetKit.framework */,
+				0361CEC92CC62F7D00434DC0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +154,12 @@
 				0361CE9F2CC62E4900434DC0 /* Sources */,
 				0361CEA02CC62E4900434DC0 /* Frameworks */,
 				0361CEA12CC62E4900434DC0 /* Resources */,
+				0361CEDA2CC62F7F00434DC0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0361CED42CC62F7F00434DC0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0361CEA52CC62E4900434DC0 /* RXHackthon */,
@@ -69,6 +170,28 @@
 			productName = RXHackthon;
 			productReference = 0361CEA32CC62E4900434DC0 /* RXHackthon.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0361CEC42CC62F7D00434DC0 /* FlightActivityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0361CED72CC62F7F00434DC0 /* Build configuration list for PBXNativeTarget "FlightActivityWidgetExtension" */;
+			buildPhases = (
+				0361CEC12CC62F7D00434DC0 /* Sources */,
+				0361CEC22CC62F7D00434DC0 /* Frameworks */,
+				0361CEC32CC62F7D00434DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0361CECB2CC62F7D00434DC0 /* FlightActivityWidget */,
+			);
+			name = FlightActivityWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = FlightActivityWidgetExtension;
+			productReference = 0361CEC52CC62F7D00434DC0 /* FlightActivityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +204,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					0361CEA22CC62E4900434DC0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0361CEC42CC62F7D00434DC0 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -100,12 +226,20 @@
 			projectRoot = "";
 			targets = (
 				0361CEA22CC62E4900434DC0 /* RXHackthon */,
+				0361CEC42CC62F7D00434DC0 /* FlightActivityWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0361CEA12CC62E4900434DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0361CEC32CC62F7D00434DC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +256,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0361CEC12CC62F7D00434DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0361CED42CC62F7F00434DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0361CEC42CC62F7D00434DC0 /* FlightActivityWidgetExtension */;
+			targetProxy = 0361CED32CC62F7F00434DC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0361CEAF2CC62E4A00434DC0 /* Debug */ = {
@@ -255,6 +404,8 @@
 				DEVELOPMENT_TEAM = T863KR374G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RXHackthon/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +435,8 @@
 				DEVELOPMENT_TEAM = T863KR374G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RXHackthon/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,6 +449,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Abrar.RXHackthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0361CED82CC62F7F00434DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T863KR374G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abrar.RXHackthon.FlightActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0361CED92CC62F7F00434DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T863KR374G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Abrar.RXHackthon.FlightActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +526,15 @@
 			buildConfigurations = (
 				0361CEB22CC62E4A00434DC0 /* Debug */,
 				0361CEB32CC62E4A00434DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0361CED72CC62F7F00434DC0 /* Build configuration list for PBXNativeTarget "FlightActivityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0361CED82CC62F7F00434DC0 /* Debug */,
+				0361CED92CC62F7F00434DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
