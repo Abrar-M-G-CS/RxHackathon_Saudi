@@ -9,8 +9,11 @@ import Foundation
 import SwiftUI
 
 
-let bgColor = Color("ButtonColor")
+let bgColor = Color("pillColor")
 
 let descriptionColor = Color("DescriptionColor")
 
-let barTintColor = Color("bargray")
+
+let progressbar = Color("progressColor")
+
+

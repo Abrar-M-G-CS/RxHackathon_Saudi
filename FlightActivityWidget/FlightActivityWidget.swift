@@ -6,22 +6,20 @@ struct FlightActivityWidget: Widget {
         ActivityConfiguration(for: FlightAttribute.self) { context in
             
             VStack(alignment: .leading) {
-                
                 // Using FlightActivityView component
                 FlightActivityView(
-                    state: FlightAttribute.ContentState(arrivalTime: "12:00",
-                                                        phoneNumber: "+971500000000",
+                    state: FlightAttribute.ContentState(arrivalTime: context.state.arrivalTime,
+                                                        phoneNumber: context.state.phoneNumber,
                                                         resturantName: context.state.resturantName,
                                                         customerAddress: context.state.customerAddress,
                                                         remainingDistance: context.state.remainingDistance)
                 )
                 .padding(.horizontal, 30)
-                
             }
             .frame(height: 160)
             .activityBackgroundTint(Color.black.opacity(0.7)) // Change the background opacity of the live view
             
-        } dynamicIsland: { context in
+        } dynamicIsland: { context in 
             
             DynamicIsland {
                 DynamicIslandExpandedRegion(.center) {
